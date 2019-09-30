@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+//Routes for the getting the whole web pages on view root folder
+Route::get('/', 'PagesController@getHome');
+Route::get('/about', 'PagesController@getAboutPage');
+Route::get('/joblistings', 'PagesController@getJobListingPage');
+Route::get('/contact', 'PagesController@getContactPage');
+

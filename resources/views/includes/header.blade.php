@@ -29,11 +29,11 @@
 							<nav class="main_nav ml-auto">
 								<ul>
 									<li><a href="/">Home</a></li>
-									<li><a href="#">About us</a></li>
-									<li><a href="#">Job Listings</a></li>
+									<li><a href="/about">About us</a></li>
+									<li><a href="/joblistings">Job Listings</a></li>
 									<li><a href="#">SignUp</a></li>
 									<li><a href="#">Login</a></li>
-									<li><a href="#">Contact</a></li>
+									<li><a href="/contact">Contact</a></li>
 								</ul>
 							</nav>
 							<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -79,12 +79,12 @@
 		<div class="menu_inner menu_mm">
 			<div class="menu menu_mm">
 				<ul class="menu_list menu_mm">
-					<li class="menu_item menu_mm"><a href="#">Home</a></li>
-					<li class="menu_item menu_mm"><a href="#">About us</a></li>
-					<li class="menu_item menu_mm"><a href="#">Job Listings</a></li>
+					<li class="menu_item menu_mm"><a href="/">Home</a></li>
+					<li class="menu_item menu_mm"><a href="/about">About us</a></li>
+					<li class="menu_item menu_mm"><a href="/joblistings">Job Listings</a></li>
 					<li class="menu_item menu_mm"><a href="#">Login</a></li>
 					<li class="menu_item menu_mm"><a href="#">SignUp</a></li>
-					<li class="menu_item menu_mm"><a href="#">Contact Us</a></li>
+					<li class="menu_item menu_mm"><a href="/contact">Contact Us</a></li>
 				</ul>
 			</div>
 			<div class="menu_extra">
