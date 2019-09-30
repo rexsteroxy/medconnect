@@ -16,4 +16,5 @@ Route::get('/', 'PagesController@getHome');
 Route::get('/about', 'PagesController@getAboutPage');
 Route::get('/joblistings', 'PagesController@getJobListingPage');
 Route::get('/contact', 'PagesController@getContactPage');
+Route::get('/admin', 'PagesController@getAdminDashBoard');
 

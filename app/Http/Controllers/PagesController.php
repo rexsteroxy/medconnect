@@ -24,5 +24,9 @@ class PagesController extends Controller
     {
         return view('contact');
     }
+    public function getAdminDashBoard()
+    {
+        return view('admin.index');
+    }
     
 }
