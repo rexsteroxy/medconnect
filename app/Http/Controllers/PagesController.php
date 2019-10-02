@@ -14,7 +14,7 @@ class PagesController extends Controller
     }
     public function getJobListingPage()
     {
-        return view('jobListing');
+        return view('joblisting');
     }
     public function getAboutPage()
     {
