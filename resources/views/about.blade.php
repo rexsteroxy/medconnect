@@ -11,7 +11,7 @@
 				<!-- About Content -->
 				<div class="col-lg-7">
 					<div class="about_content">
-						<div class="section_title"><h2>About MedConnect</h2></div>
+						<div class="section_title"><h2>About MedJobs</h2></div>
 						<div class="about_text">
 						<div class="section_title"><h2>We Provide All KInds Of Medical Job Opportunities</h2></div>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dapibus massa. Pellen tesque in luctus ex. Praesent luctus erat sit amet tortor aliquam bibendum. Nulla ut molestie augue, scelerisque consectetur quam. Dolor sit amet, consectetur adipiscing elit. Cura bitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dapibus massa. Pellentesque in luctus ex.</p>

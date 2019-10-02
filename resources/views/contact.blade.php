@@ -6,21 +6,21 @@
 	
 	<!-- Home -->
 
-	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contact.jpg" data-speed="0.8"></div>
+	<!-- <div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/contac.jpg" data-speed="0.8"></div>
 		<div class="home_container">
 			<div class="container">
 				<div class="row">
 					<div class="col">
 						<div class="home_content">
-							<div class="home_title"><span>Med</span>Connect</div>
+							<div class="home_title"><span>Med</span>Jobs</div>
 							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- Contact -->
 
@@ -38,7 +38,7 @@
 						<li><div class="contact_about_icon"><img src="images/phone-call.svg" alt="">
 						</div><span>+2349037096290</span></li>
 						<li><div class="contact_about_icon"><img src="images/envelope.svg" alt="">
-						</div><span>office@medconnect.com</span></li>
+						</div><span>office@medJobs.com</span></li>
 						<li><div class="contact_about_icon"><img src="images/placeholder.svg" alt="">
 						</div><span>F.M.C Owerri Imo State</span></li>
 					</ul>

@@ -10,8 +10,8 @@
 				<div class="row">
 					<div class="col">
 						<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
-							<div class="top_bar_item"><a href="#">SignUp</a></div>
-							<div class="top_bar_item"><a href="#">Login</a></div>
+							<div class="top_bar_item"><a href="/joblistings">SignUp</a></div>
+							<div class="top_bar_item"><a href="/joblistings">Login</a></div>
 							
 						</div>
 
@@ -31,8 +31,8 @@
 									<li><a href="/">Home</a></li>
 									<li><a href="/about">About us</a></li>
 									<li><a href="/joblistings">Job Listings</a></li>
-									<li><a href="#">SignUp</a></li>
-									<li><a href="#">Login</a></li>
+									<li><a href="/joblistings">SignUp</a></li>
+									<li><a href="/joblistings">Login</a></li>
 									<li><a href="/contact">Contact</a></li>
 								</ul>
 							</nav>
@@ -49,11 +49,11 @@
 				<div class="row">
 					<div class="col">
 						<div class="logo_container">
-							<a href="#">
+							<a href="/joblistings">
 								<div class="logo_content d-flex flex-column align-items-start justify-content-center">
 									<div class="logo_line"></div>
 									<div class="logo d-flex flex-row align-items-center justify-content-center">
-										<div class="logo_text">Med<span>Connect</span></div>
+										<div class="logo_text">Med<span>Jobs</span></div>
 									</div>
 									<div class="logo_sub">Medical-Job-Listings</div>
 								</div>
@@ -82,13 +82,13 @@
 					<li class="menu_item menu_mm"><a href="/">Home</a></li>
 					<li class="menu_item menu_mm"><a href="/about">About us</a></li>
 					<li class="menu_item menu_mm"><a href="/joblistings">Job Listings</a></li>
-					<li class="menu_item menu_mm"><a href="#">Login</a></li>
-					<li class="menu_item menu_mm"><a href="#">SignUp</a></li>
+					<li class="menu_item menu_mm"><a href="/joblistings">Login</a></li>
+					<li class="menu_item menu_mm"><a href="/joblistings">SignUp</a></li>
 					<li class="menu_item menu_mm"><a href="/contact">Contact Us</a></li>
 				</ul>
 			</div>
 			<div class="menu_extra">
-				<div class="menu_appointment"><a href="#">For More Enquiries</a></div>
+				<div class="menu_appointment"><a href="/joblistings">For More Enquiries</a></div>
 				<div class="menu_success">Enquiries: +234903709290</div>
 			</div>
 

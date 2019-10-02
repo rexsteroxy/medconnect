@@ -14,13 +14,13 @@
 				
 				<!-- Slider Item -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/home_background_1.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(images/text_section.jpg)"></div>
 					<div class="home_content">
 						<div class="container">
 							<div class="row">
 								<div class="col">
 									<div class="home_content_inner">
-										<div class="home_title"><h1>MedConnect</h1></div>
+										<div class="home_title"><h1>MedJobs</h1></div>
 										<div class="home_text">
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 											 Mauris tempus vestibulum mauris quis aliquam. Integer 
@@ -28,7 +28,7 @@
 											  Quisque at erat eu.</p>
 										</div>
 										<div class="button home_button">
-											<a href="#">Get Started</a>
+											<a href="/joblistings">Get Started</a>
 										</div>
 									</div>
 								</div>
@@ -59,7 +59,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dapibus massa. Pellen tesque in luctus ex. Praesent luctus erat sit amet tortor aliquam bibendum. Nulla ut molestie augue, scelerisque consectetur quam. Dolor sit amet, consectetur adipiscing elit. Cura bitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dapibus massa. Pellentesque in luctus ex.</p>
 						</div>
 						<div class="button about_button">
-							<a href="#">read more</a>
+							<a href="/joblistings">read more</a>
 						</div>
 					</div>
 				</div>
@@ -123,7 +123,7 @@
 						<div class="dept_text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dap ibus massa. Pellen tesque in luctus ex.</p>
 						</div>
-						<div class="button dept_button"><a href="#">View More Jobs</a></div>
+						<div class="button dept_button"><a href="/joblistings">View More Jobs</a></div>
 					</div>
 				</div>
 			</div>

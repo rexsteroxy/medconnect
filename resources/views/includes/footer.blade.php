@@ -9,10 +9,10 @@
 					<div class="col-lg-4 footer_col">
 						<div class="footer_about">
 							<div class="footer_logo_container">
-								<a href="#" class="d-flex flex-column align-items-center justify-content-center">
+								<a href="/joblistings" class="d-flex flex-column align-items-center justify-content-center">
 									<div class="logo_content">
 										<div class="logo d-flex flex-row align-items-center justify-content-center">
-											<div class="logo_text">Med<span>Connect</span></div>
+											<div class="logo_text">Med<span>Jobs</span></div>
 										
 										</div>
 										<div class="logo_sub">Medical Job Listings</div>
@@ -27,7 +27,7 @@
 									</div><span>+2349037096290</span></li>
 								<li><div class="footer_about_icon">
 								<img src="images/envelope.svg" alt="">
-								</div><span>office@medconnect.com</span></li>
+								</div><span>office@medJobs.com</span></li>
 								<li><div class="footer_about_icon">
 								<img src="images/placeholder.svg" alt="">
 								</div><span>Nigeria Imo State Owerri</span></li>
@@ -40,13 +40,13 @@
 						<div class="footer_links footer_column">
 							<div class="footer_title">Useful Links</div>
 							<ul>
-								<li><a href="#">Testimonials</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Apply for a Job</a></li>
-								<li><a href="#">Terms & Conditions</a></li>
-								<li><a href="#">About us</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="/joblistings">Testimonials</a></li>
+								<li><a href="/joblistings">FAQ</a></li>
+								<li><a href="/joblistings">Apply for a Job</a></li>
+								<li><a href="/joblistings">Terms & Conditions</a></li>
+								<li><a href="/joblistings">About us</a></li>
+								<li><a href="/joblistings">News</a></li>
+								<li><a href="/joblistings">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -67,12 +67,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 							<div class="footer_social ml-lg-auto">
 								<ul>
-									<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="/joblistings"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="/joblistings"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="/joblistings"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="/joblistings"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="/joblistings"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+									<li><a href="/joblistings"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
 						</div>
