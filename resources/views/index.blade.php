@@ -22,7 +22,7 @@
 									<div class="home_content_inner">
 										<div class="home_title"><h1>MedJobs</h1></div>
 										<div class="home_text">
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											<p style='color:black'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 											 Mauris tempus vestibulum mauris quis aliquam. Integer 
 											 accumsan sodales odio, id tempus velit ullamcorper id.
 											  Quisque at erat eu.</p>
