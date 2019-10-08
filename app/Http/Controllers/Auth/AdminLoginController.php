@@ -13,7 +13,7 @@ class AdminLoginController extends Controller
 public function __construct()
     //setting up the middleware for admin
     {
-        $this->middleware('guest:admin');
+        $this->middleware('guest:admin',['except' => ['logout']]);
     }   
 
     //to display the admin login form
@@ -45,4 +45,11 @@ public function __construct()
 
 
     }
+public function logout()
+{
+    Auth::guard('admin')->logout();
+    return redirect('/');
+}
+
+
 }
