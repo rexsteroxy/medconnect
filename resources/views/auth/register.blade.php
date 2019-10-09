@@ -65,7 +65,9 @@
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Register
-                                </button>
+                                </button><br>
+
+                                <strong>Already Registered? Click Here <a href="{{ route('login') }}">Login</a></strong>
                             </div>
                         </div>
                     </form>

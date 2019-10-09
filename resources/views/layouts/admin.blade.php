@@ -8,17 +8,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Med Job User Login Page</title>
+    <title>Med-Jobs Admin Dashboard</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <style>
-    body{
-        background: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60') no-repeat center fixed; 
-        background-size: cover;
-
-    }
-    </style>
 </head>
 <body>
     <div id="app">
@@ -36,7 +29,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                       <strong>Welcome To MedJobs</strong>
+                       <strong>Medical Jobs Admin Dashboard</strong>
                     </a>
                 </div>
 

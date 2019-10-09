@@ -53,11 +53,12 @@
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
                                     Login
-                                </button>
+                                </button><br>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
                                     Forgot Your Password?
-                                </a>
+                                </a> -->
+                                <strong>Not Registered? Click Here <a href="{{ route('register') }}">Register</a></strong>
                             </div>
                         </div>
                     </form>
