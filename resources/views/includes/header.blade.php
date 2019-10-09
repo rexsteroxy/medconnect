@@ -98,7 +98,7 @@
 				<ul class="menu_list menu_mm">
 					<li class="menu_item menu_mm"><a href="/">Home</a></li>
 					<li class="menu_item menu_mm"><a href="/about">About us</a></li>
-					<li class="menu_item menu_mm"><a href="/joblistings">Job Listings</a></li>
+					<li class="menu_item menu_mm"><a href="{{ route('home') }}">Job Listings</a></li>
 					@guest
 					<li class="menu_item menu_mm"><a href="{{ route('register') }}">Register</a></li>
 					<li class="menu_item menu_mm"><a href="{{ route('login') }}">Login</a></li>
