@@ -28,7 +28,7 @@
 											  Quisque at erat eu.</p>
 										</div>
 										<div class="button home_button">
-											<a href="/joblistings">Get Started</a>
+											<a href="{{ route('home') }}">Get Started</a>
 										</div>
 									</div>
 								</div>
@@ -59,7 +59,7 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dapibus massa. Pellen tesque in luctus ex. Praesent luctus erat sit amet tortor aliquam bibendum. Nulla ut molestie augue, scelerisque consectetur quam. Dolor sit amet, consectetur adipiscing elit. Cura bitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dapibus massa. Pellentesque in luctus ex.</p>
 						</div>
 						<div class="button about_button">
-							<a href="/joblistings">read more</a>
+							<a href="{{ route('home') }}">read more</a>
 						</div>
 					</div>
 				</div>
@@ -123,7 +123,7 @@
 						<div class="dept_text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin. Aliquam nec dap ibus massa. Pellen tesque in luctus ex.</p>
 						</div>
-						<div class="button dept_button"><a href="/joblistings">View More Jobs</a></div>
+						<div class="button dept_button"><a href="{{ route('home') }}">View More Jobs</a></div>
 					</div>
 				</div>
 			</div>
