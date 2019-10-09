@@ -30,6 +30,10 @@ Run the application with the following command
 $ php artisan serve
 ```
 
+## Contribute To The Project
+[Laravel](https:/github.com/rexsteroxy/medconnect/Contribution.md) - Contribution Instructions.
+
+
 
 
 ## Built With
