@@ -10,9 +10,12 @@
 				<div class="row">
 					<div class="col">
 						<div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
-							<div class="top_bar_item"><a href="/joblistings">SignUp</a></div>
-							<div class="top_bar_item"><a href="/joblistings">Login</a></div>
-							
+						@guest
+						<div class="top_bar_item"><a href="{{ route('register') }}">Register</a></div>
+						<div class="top_bar_item"><a href="{{ route('login') }}">Login</a></div>
+                        @else
+						<div class="top_bar_item" style="color:white;">{{ Auth::user()->name }} &nbsp &nbsp</div>
+						@endguest
 						</div>
 
 					</div>
@@ -30,9 +33,23 @@
 								<ul>
 									<li><a href="/">Home</a></li>
 									<li><a href="/about">About us</a></li>
-									<li><a href="/joblistings">Job Listings</a></li>
-									<li><a href="/joblistings">SignUp</a></li>
-									<li><a href="/joblistings">Login</a></li>
+									<li><a href="{{ route('home') }}">Job Listings</a></li>
+									@guest
+									<li><a href="{{ route('register') }}">Register</a></li>
+									<li><a href="{{ route('login') }}">Login</a></li>
+									@else
+									<li>
+									<a href="{{ route('logout') }}" style="color:red;"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+									</li>
+									@endguest
 									<li><a href="/contact">Contact</a></li>
 								</ul>
 							</nav>
@@ -82,8 +99,24 @@
 					<li class="menu_item menu_mm"><a href="/">Home</a></li>
 					<li class="menu_item menu_mm"><a href="/about">About us</a></li>
 					<li class="menu_item menu_mm"><a href="/joblistings">Job Listings</a></li>
-					<li class="menu_item menu_mm"><a href="/joblistings">Login</a></li>
-					<li class="menu_item menu_mm"><a href="/joblistings">SignUp</a></li>
+					@guest
+					<li class="menu_item menu_mm"><a href="{{ route('register') }}">Register</a></li>
+					<li class="menu_item menu_mm"><a href="{{ route('login') }}">Login</a></li>
+					@else
+						<li class="menu_item menu_mm">
+						<a href="{{ route('logout') }}" style="color:red;"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+									</li>
+
+						</li>
+					@endguest
 					<li class="menu_item menu_mm"><a href="/contact">Contact Us</a></li>
 				</ul>
 			</div>

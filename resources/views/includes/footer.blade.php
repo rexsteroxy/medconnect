@@ -9,7 +9,7 @@
 					<div class="col-lg-4 footer_col">
 						<div class="footer_about">
 							<div class="footer_logo_container">
-								<a href="/joblistings" class="d-flex flex-column align-items-center justify-content-center">
+								<a href="{{ route('home') }}" class="d-flex flex-column align-items-center justify-content-center">
 									<div class="logo_content">
 										<div class="logo d-flex flex-row align-items-center justify-content-center">
 											<div class="logo_text">Med<span>Jobs</span></div>
@@ -40,13 +40,13 @@
 						<div class="footer_links footer_column">
 							<div class="footer_title">Useful Links</div>
 							<ul>
-								<li><a href="/joblistings">Testimonials</a></li>
-								<li><a href="/joblistings">FAQ</a></li>
-								<li><a href="/joblistings">Apply for a Job</a></li>
-								<li><a href="/joblistings">Terms & Conditions</a></li>
-								<li><a href="/joblistings">About us</a></li>
-								<li><a href="/joblistings">News</a></li>
-								<li><a href="/joblistings">Contact</a></li>
+								<li><a href="{{ route('home') }}">Testimonials</a></li>
+								<li><a href="{{ route('home') }}">FAQ</a></li>
+								<li><a href="{{ route('home') }}">Apply for a Job</a></li>
+								<li><a href="{{ route('home') }}">Terms & Conditions</a></li>
+								<li><a href="{{ route('home') }}">About us</a></li>
+								<li><a href="{{ route('home') }}">News</a></li>
+								<li><a href="{{ route('home') }}">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -67,12 +67,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
 							<div class="footer_social ml-lg-auto">
 								<ul>
-									<li><a href="/joblistings"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-									<li><a href="/joblistings"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="/joblistings"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-									<li><a href="/joblistings"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="/joblistings"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-									<li><a href="/joblistings"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a href="{{ route('home') }}"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+									<li><a href="{{ route('home') }}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+									<li><a href="{{ route('home') }}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="{{ route('home') }}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+									<li><a href="{{ route('home') }}"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+									<li><a href="{{ route('home') }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
 						</div>
