@@ -33,7 +33,7 @@
 								<ul>
 									<li><a href="/">Home</a></li>
 									<li><a href="/about">About us</a></li>
-									<li><a href="{{ route('home') }}">Job Listings</a></li>
+									<li><a href="/joblistings">Job Listings</a></li>
 									@guest
 									<li><a href="{{ route('register') }}">Register</a></li>
 									<li><a href="{{ route('login') }}">Login</a></li>
@@ -98,7 +98,7 @@
 				<ul class="menu_list menu_mm">
 					<li class="menu_item menu_mm"><a href="/">Home</a></li>
 					<li class="menu_item menu_mm"><a href="/about">About us</a></li>
-					<li class="menu_item menu_mm"><a href="{{ route('home') }}">Job Listings</a></li>
+					<li class="menu_item menu_mm"><a href="/joblistings">Job Listings</a></li>
 					@guest
 					<li class="menu_item menu_mm"><a href="{{ route('register') }}">Register</a></li>
 					<li class="menu_item menu_mm"><a href="{{ route('login') }}">Login</a></li>
@@ -121,7 +121,7 @@
 				</ul>
 			</div>
 			<div class="menu_extra">
-				<div class="menu_appointment"><a href="/joblistings">For More Enquiries</a></div>
+				<div class="menu_appointment"><a href="/joblistingss">For More Enquiries</a></div>
 				<div class="menu_success">Enquiries: +234903709290</div>
 			</div>
 

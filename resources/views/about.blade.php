@@ -21,7 +21,7 @@
 
 				<!-- About Image -->
 				<div class="col-lg-5">
-					<div class="about_image"><img src="images/about.png" alt=""></div>
+					<div class="about_image"><img src="images/black4.png" alt=""></div>
 				</div>
 			</div>
 		</div>
