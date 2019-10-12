@@ -37,3 +37,4 @@ Route::get('/view/{job_id}','JobsController@show');
 Route::get('/edit/{job_id}','JobsController@edit');
 Route::post('/editjob/{job_id}','JobsController@update');
 Route::get('/delete/{id}','JobsController@destroy');
+Route::get('/viewUsers','AdminController@showUsers');

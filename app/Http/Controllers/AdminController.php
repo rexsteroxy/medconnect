@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Job;
+use App\User;
 class AdminController extends Controller
 {
     /**
@@ -26,5 +27,9 @@ class AdminController extends Controller
 
         $jobs = Job::paginate(2);
         return view('admin',compact('jobs'));
+    }
+    public function showUsers(){
+        $users = User::paginate(50);
+        return view('jobs.users',compact('users'));
     }
 }
