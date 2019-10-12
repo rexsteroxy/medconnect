@@ -34,6 +34,7 @@
 									<li><a href="/">Home</a></li>
 									<li><a href="/about">About us</a></li>
 									<li><a href="/joblistings">Job Listings</a></li>
+									<li><a href="/home">Dashboard</a></li>
 									@guest
 									<li><a href="{{ route('register') }}">Register</a></li>
 									<li><a href="{{ route('login') }}">Login</a></li>
@@ -99,6 +100,7 @@
 					<li class="menu_item menu_mm"><a href="/">Home</a></li>
 					<li class="menu_item menu_mm"><a href="/about">About us</a></li>
 					<li class="menu_item menu_mm"><a href="/joblistings">Job Listings</a></li>
+					<li class="menu_item menu_mm"><a href="/home">Dashboard</a></li>
 					@guest
 					<li class="menu_item menu_mm"><a href="{{ route('register') }}">Register</a></li>
 					<li class="menu_item menu_mm"><a href="{{ route('login') }}">Login</a></li>
