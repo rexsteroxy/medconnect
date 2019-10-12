@@ -55,9 +55,10 @@ class JobsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($job_id)
     {
-        //
+        $jobs =Job::where('id', '=', $job_id)->get();
+        return view('jobs.view',compact('jobs'));
     }
 
     /**
@@ -66,9 +67,10 @@ class JobsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($job_id)
     {
-        //
+        $job =Job::find($job_id);
+        return view('jobs.edit',compact('job'));
     }
 
     /**
@@ -78,9 +80,37 @@ class JobsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $job_id)
     {
-        //
+        $this->validate($request, [
+            "job_title"=>"required",
+            "description"=>'required',
+            "requirement"=>'required',
+            "location"=>'required',
+            "price"=>"required"   
+        ]);
+        $job = new Job;
+        $job->job_title = $request->input('job_title');
+        $job->description = $request->input('description');
+        $job->requirement= $request->input('requirement');
+        $job->location = $request->input('location');
+        $job->price= $request->input('price');
+        
+
+        $data = array(
+            'job_title' => $job->job_title,
+            'description' => $job->description,
+            'requirement' => $job->requirement,
+            'location' => $job->location,
+            'price' =>  $job->price
+        );
+
+        Job::where('id',$job_id)->update($data);
+        $job->update();
+       return redirect('/admin')->with('response','Job updated  successfully');
+
+ return $job_id;
+
     }
 
     /**
@@ -89,8 +119,9 @@ class JobsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($job_id)
     {
-        //
+        Job::where('id',$job_id)->delete();
+    return redirect('/admin')->with('response','Job Post deleted  successfully');
     }
 }

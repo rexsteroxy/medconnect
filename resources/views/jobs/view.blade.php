@@ -54,7 +54,7 @@
                    <p class="lead"></p>
                 </div> -->
               
-                <div class="col-md-3">
+                <div class="col-md-2">
                     <img src="images/black5.jpg" 
                     class="avatar" alt=""> 
                   
@@ -93,25 +93,6 @@
                 </div>
                     
                 
-                    <p></p>
-                    <ul class="nav nav-pills">
-                        <li role="presentation">
-                            <a href='{{ url("/view/{$job->id}") }}'>
-                                <span class="fa fa-eye">View</span>
-                            </a>
-                        </li>
-                        <li role="presentation">
-                            <a href='{{ url("/edit/{$job->id}") }}'>
-                                <span class="fa fa-pencil-square-o">Edit</span>
-                            </a>
-                        </li>
-                        <li role="presentation">
-                            <a href='{{ url("/delete/{$job->id}") }}'>
-                                <span class="fa fa-trash">Delete</span>
-                            </a>
-                        </li>
-                        
-                    </ul>
                     <cite style="float:left">Uploaded On: {{date('M j, Y h:i', strtotime($job->updated_at))}}</cite>
                     <hr>
                 @endforeach
@@ -119,7 +100,7 @@
                 <h2>NO JOB POST AVAILABLE</h2>
 
                 @endif
-                {{$jobs->links()}}
+                
                     
                 </div>
             </div>
