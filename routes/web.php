@@ -21,6 +21,8 @@ Route::get('/admin', 'PagesController@getAdminDashBoard');
 
 Auth::routes();
 Route::get('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
+Route::get('/viewUsers','AdminController@showUsers');
+
 
 Route::get('/home', 'HomeController@index')->name('home');
     Route::prefix('admin')->group(function(){
@@ -37,4 +39,9 @@ Route::get('/view/{job_id}','JobsController@show');
 Route::get('/edit/{job_id}','JobsController@edit');
 Route::post('/editjob/{job_id}','JobsController@update');
 Route::get('/delete/{id}','JobsController@destroy');
-Route::get('/viewUsers','AdminController@showUsers');
+
+
+//Route for the application page
+
+Route::get('/application','ApplicationsController@show');
+

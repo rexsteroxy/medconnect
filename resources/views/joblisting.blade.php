@@ -37,14 +37,14 @@
 				
 				<!-- Service -->
 				<div class="col-lg-4 col-md-6 service_col">
-					<a href="#">
+					<a href="/application">
 						<div class="service text-center trans_200">
 							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
 							<div class="service_title trans_200">General Practicioner</div>
 							<div class="service_text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
 							</div>
-							<div class="button about_button"><a href="#">Apply</a></div>
+							<div class="button about_button"><a href="/application">Apply</a></div>
 						</div>
 					</a>
 					
@@ -52,14 +52,14 @@
 
 				<!-- Service -->
 				<div class="col-lg-4 col-md-6 service_col">
-					<a href="#">
+					<a href="/application">
 						<div class="service text-center trans_200">
 							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
 							<div class="service_title trans_200">General Practicioner</div>
 							<div class="service_text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
 							</div>
-							<div class="button about_button"><a href="#">Apply</a></div>
+							<div class="button about_button"><a href="/application">Apply</a></div>
 						</div>
 					</a>
 					
@@ -67,14 +67,14 @@
 
 				<!-- Service -->
 				<div class="col-lg-4 col-md-6 service_col">
-					<a href="#">
+					<a href="/application">
 						<div class="service text-center trans_200">
 							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
 							<div class="service_title trans_200">General Practicioner</div>
 							<div class="service_text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
 							</div>
-							<div class="button about_button"><a href="#">Apply</a></div>
+							<div class="button about_button"><a href="/application">Apply</a></div>
 						</div>
 					</a>
 					
@@ -82,14 +82,14 @@
 
 				<!-- Service -->
 				<div class="col-lg-4 col-md-6 service_col">
-					<a href="#">
+					<a href="/application">
 						<div class="service text-center trans_200">
 							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
 							<div class="service_title trans_200">General Practicioner</div>
 							<div class="service_text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
 							</div>
-							<div class="button about_button"><a href="#">Apply</a></div>
+							<div class="button about_button"><a href="/application">Apply</a></div>
 						</div>
 					</a>
 					
@@ -97,14 +97,14 @@
 
 				<!-- Service -->
 				<div class="col-lg-4 col-md-6 service_col">
-					<a href="#">
+					<a href="/application">
 						<div class="service text-center trans_200">
 							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
 							<div class="service_title trans_200">General Practicioner</div>
 							<div class="service_text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
 							</div>
-							<div class="button about_button"><a href="#">Apply</a></div>
+							<div class="button about_button"><a href="/application">Apply</a></div>
 						</div>
 					</a>
 					
@@ -112,14 +112,14 @@
 
 				<!-- Service -->
 				<div class="col-lg-4 col-md-6 service_col">
-					<a href="#">
+					<a href="/application">
 						<div class="service text-center trans_200">
 							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
 							<div class="service_title trans_200">General Practicioner</div>
 							<div class="service_text">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
 							</div>
-							<div class="button about_button"><a href="#">Apply</a></div>
+							<div class="button about_button"><a href="/application">Apply</a></div>
 						</div>
 					</a>
 					
