@@ -29,3 +29,7 @@ Route::get('/home', 'HomeController@index')->name('home');
         Route::get('/', 'AdminController@index')->name('admin.dashboard');
         Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
     });
+
+//Routes for the job posting admin page
+Route::get('/job','JobsController@create');
+Route::post('/addjob','JobsController@store');

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Job;
 class AdminController extends Controller
 {
     /**
@@ -23,6 +23,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin');
+
+        $jobs = Job::paginate(2);
+        return view('admin',compact('jobs'));
     }
 }
