@@ -8,7 +8,7 @@
                 <div class="panel-heading">Application Form</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                    <form class="form-horizontal" method="POST" action="{{ route('user.apply') }}" enctype="multipart/form-data">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -39,15 +39,15 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('PhoneNumber') ? ' has-error' : '' }}">
-                            <label for="PhoneNumber" class="col-md-4 control-label">PhoneNumber</label>
+                        <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                            <label for="phone" class="col-md-4 control-label">phone</label>
 
                             <div class="col-md-6">
-                                <input id="PhoneNumber" type="number" class="form-control" name="PhoneNumber" required>
+                                <input id="phone" type="number" class="form-control" name="phone" required>
 
-                                @if ($errors->has('PhoneNumber'))
+                                @if ($errors->has('phone'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('PhoneNumber') }}</strong>
+                                        <strong>{{ $errors->first('phone') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -58,6 +58,12 @@
 
                             <div class="col-md-6">
                                 <input id="cv" type="file" class="form-control" name="cv" required>
+                                @foreach ($errors->get('cv') as $error)
+                                    <span class="help-block">
+                                        <strong>{{ $error }}</strong>
+                                        
+                                    </span>
+                                @endforeach
                             </div>
                         </div>
 
@@ -66,8 +72,6 @@
                                 <button type="submit" class="btn btn-primary">
                                     Submit
                                 </button><br>
-
-                               
                             </div>
                         </div>
                     </form>

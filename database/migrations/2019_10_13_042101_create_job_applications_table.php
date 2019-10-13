@@ -19,7 +19,7 @@ class CreateJobApplicationsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phone');
-            $table->string('cv_link');
+            $table->string('cv');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
         });
