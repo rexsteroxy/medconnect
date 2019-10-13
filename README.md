@@ -25,6 +25,8 @@ $ cp .env.example .env
 
 ``` $ php artisan key:generate```
 
+``` $ php artisan migrate:fresh  --seed```
+
 ## Run
 Run the application with the following command
 ```bash

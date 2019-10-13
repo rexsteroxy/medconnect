@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\JobApplication;
+use App\Http\Requests\StoreJobApplication;
+use App\JobApplication as JobApplication;
 use Illuminate\Http\Request;
 
 class JobApplicationController extends Controller
@@ -29,9 +30,9 @@ class JobApplicationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -40,9 +41,19 @@ class JobApplicationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreJobApplication $request)
     {
-        //
+        
+        $application = $request->all();
+        $application['user_id'] = auth()->user()->id;
+        // return $application;
+        $path = $request->file('cv')->store('applications');
+
+        $application['cv'] = $path;
+        JobApplication::create($application);
+       return redirect()->route('jobListings');
+    
+
     }
 
     /**
