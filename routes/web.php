@@ -43,5 +43,5 @@ Route::get('/delete/{id}','JobsController@destroy');
 
 //Route for the application page
 
-Route::get('/application','ApplicationsController@show');
+Route::get('/application','JobApplicationController@show');
 

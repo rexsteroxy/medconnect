@@ -19,7 +19,7 @@ class CreateJobsTable extends Migration
             $table->text('description');
             $table->text('requirement');
             $table->string('location');
-            $table->string('price');
+            $table->string('salary_range');
             $table->timestamps();
         });
     }
