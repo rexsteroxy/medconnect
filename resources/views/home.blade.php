@@ -29,7 +29,10 @@
 					<form id="logout-form" action="{{ route('logout') }}" method="POST" ">
                         {{ csrf_field() }}
 						<input type="file" name="profile">
-                     </form>
+                     </form><br><br><hr>
+					 <ul>
+ 						<li> <a class='btn btn-success' href="#">Edit Profile details</a> </li>
+					 </ul>
 						</div>	 
 					<div class="col-md-8">
 						<div class="top_bar_item" style="color:green;">{{ Auth::user()->name }} &nbsp &nbsp</div>
@@ -47,8 +50,6 @@
                         <thead class="thead-dark">
                           <tr>
                             <th scope="col">Job Title</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Requirment</th>
                             <th scope="col">Location</th>
                             <th scope="col">Price Range</th>
                           </tr>
@@ -56,8 +57,6 @@
                         <tbody>
                           <tr>
                             <td>NeuroSurgeon</td>
-                            <td>Brain doctor and many more</td>
-                            <td>6 years medical experience and many more</td>
                             <td>London</td>
                             <td>$2000- $25000</td>
                             
@@ -68,8 +67,6 @@
                         <thead class="thead-dark">
                           <tr>
                             <th scope="col">Job Title</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Requirment</th>
                             <th scope="col">Location</th>
                             <th scope="col">Price Range</th>
                           </tr>
@@ -77,8 +74,6 @@
                         <tbody>
                           <tr>
                             <td>NeuroSurgeon</td>
-                            <td>Brain doctor and many more</td>
-                            <td>6 years medical experience and many more</td>
                             <td>London</td>
                             <td>$2000- $25000</td>
                             
@@ -89,8 +84,6 @@
                         <thead class="thead-dark">
                           <tr>
                             <th scope="col">Job Title</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Requirment</th>
                             <th scope="col">Location</th>
                             <th scope="col">Price Range</th>
                           </tr>
@@ -98,8 +91,6 @@
                         <tbody>
                           <tr>
                             <td>NeuroSurgeon</td>
-                            <td>Brain doctor and many more</td>
-                            <td>6 years medical experience and many more</td>
                             <td>London</td>
                             <td>$2000- $25000</td>
                             
