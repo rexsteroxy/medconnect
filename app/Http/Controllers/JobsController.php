@@ -29,23 +29,26 @@ class JobsController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, [
+       $validation = $this->validate($request, [
             "job_title"=>"required",
             "description"=>'required',
             "requirement"=>'required',
             "location"=>'required',
-            "price"=>"required"   
+            "salary_range"=>"required"   
         ]);
 
+        
+
         $job = new Job;
+        $job->admin_id = auth()->user()->id; 
         $job->job_title = $request->input('job_title');
         $job->description = $request->input('description');
         $job->requirement= $request->input('requirement');
         $job->location = $request->input('location');
-        $job->price= $request->input('price');
+        $job->salary_range= $request->input('salary_range'); 
         $job->save();
 
-        return redirect('/admin')->with('response','Job uploaded  successfully');
+       return redirect('/admin')->with('response','Job uploaded  successfully');
 
     }
 

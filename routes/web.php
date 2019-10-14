@@ -34,7 +34,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 //Routes for the job posting admin page
 Route::get('/job','JobsController@create');
-Route::post('/addjob','JobsController@store');
+Route::post('/addjob','JobsController@store')->name('admin.addjob');
 Route::get('/view/{job_id}','JobsController@show');
 Route::get('/edit/{job_id}','JobsController@edit');
 Route::post('/editjob/{job_id}','JobsController@update');
