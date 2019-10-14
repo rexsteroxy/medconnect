@@ -2,29 +2,7 @@
 
 @section('content')
 
-	<!-- Job Listings-->
-
-	<!-- Home -->
-
-	<!-- <div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/cta.jpg" data-speed="0.8"></div>
-		<div class="home_container">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<div class="home_content">
-							<div class="home_title"><span>MedJobs</span>-JobListings</div>
-							<div class="breadcrumbs">
-								
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-				 -->
-				<!-- Services -->
+	
 
 	<div class="services">
 		<div class="container">
@@ -34,96 +12,66 @@
 				</div>
 			</div>
 			<div class="row services_row">
+				@if(count($jobs) > 0)
+				@foreach($jobs->all() as $job)
+				<!-- Service -->
+				<div class="col-lg-4 col-md-6 service_col">
+					<a href="/application">
+						<div class="service text-center trans_200">
+							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
+							<div class="service_title trans_200">{{ $job->job_title }}</div>
+							<div class="service_text">
+								<!-- <p>{{ $job->description }}</p>
+								<p>{{ $job->requirement }}</p>
+								<p>{{ $job->location }}</p>
+								<p>{{ $job->salary_range }}</p> -->
+
+								<!-- <h1>{{$job->job_title}}</h1> -->
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+						  <th scope="col">Requirment</th>
+                            <th scope="col">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+						  	<td>{{ $job->requirement }}</td>
+                            <td>{{ $job->description }}</td>
+                          </tr>
+                        </tbody>
+                    </table>
+					<table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+						  <tr>
+                            <th scope="col">Location</th>
+                            <th scope="col">Price Range</th>
+						  </tr>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+						  	<td>{{ $job->location }}</td>
+                            <td>{{ $job->salary_range }}</td>
+                          </tr>
+                        </tbody>
+                    </table>
+							</div>
+							<cite style="float:left">Uploaded On: {{date('M j, Y h:i', strtotime($job->updated_at))}}</cite>
+							<div class="button about_button"><a href="/application">Apply</a></div>
+						</div>
+					</a>
+					
+				</div>
+				@endforeach
+                @else
+                <h2>NO JOB POST AVAILABLE</h2>
+
+                @endif
+                {{$jobs->links()}}
+
 				
-				<!-- Service -->
-				<div class="col-lg-4 col-md-6 service_col">
-					<a href="/application">
-						<div class="service text-center trans_200">
-							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
-							<div class="service_title trans_200">General Practicioner</div>
-							<div class="service_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
-							</div>
-							<div class="button about_button"><a href="/application">Apply</a></div>
-						</div>
-					</a>
-					
-				</div>
-
-				<!-- Service -->
-				<div class="col-lg-4 col-md-6 service_col">
-					<a href="/application">
-						<div class="service text-center trans_200">
-							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
-							<div class="service_title trans_200">General Practicioner</div>
-							<div class="service_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
-							</div>
-							<div class="button about_button"><a href="/application">Apply</a></div>
-						</div>
-					</a>
-					
-				</div>
-
-				<!-- Service -->
-				<div class="col-lg-4 col-md-6 service_col">
-					<a href="/application">
-						<div class="service text-center trans_200">
-							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
-							<div class="service_title trans_200">General Practicioner</div>
-							<div class="service_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
-							</div>
-							<div class="button about_button"><a href="/application">Apply</a></div>
-						</div>
-					</a>
-					
-				</div>
-
-				<!-- Service -->
-				<div class="col-lg-4 col-md-6 service_col">
-					<a href="/application">
-						<div class="service text-center trans_200">
-							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
-							<div class="service_title trans_200">General Practicioner</div>
-							<div class="service_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
-							</div>
-							<div class="button about_button"><a href="/application">Apply</a></div>
-						</div>
-					</a>
-					
-				</div>
-
-				<!-- Service -->
-				<div class="col-lg-4 col-md-6 service_col">
-					<a href="/application">
-						<div class="service text-center trans_200">
-							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
-							<div class="service_title trans_200">General Practicioner</div>
-							<div class="service_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
-							</div>
-							<div class="button about_button"><a href="/application">Apply</a></div>
-						</div>
-					</a>
-					
-				</div>
-
-				<!-- Service -->
-				<div class="col-lg-4 col-md-6 service_col">
-					<a href="/application">
-						<div class="service text-center trans_200">
-							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
-							<div class="service_title trans_200">General Practicioner</div>
-							<div class="service_text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ante leo, finibus quis est ut, tempor tincidunt ipsum. Nam consequat semper sollicitudin.</p>
-							</div>
-							<div class="button about_button"><a href="/application">Apply</a></div>
-						</div>
-					</a>
-					
-				</div>
 			</div>
 		</div>
 	</div>

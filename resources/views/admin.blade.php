@@ -85,7 +85,7 @@
                             <td>{{ $job->description }}</td>
                             <td>{{ $job->requirement }}</td>
                             <td>{{ $job->location }}</td>
-                            <td>{{ $job->price }}</td>
+                            <td>{{ $job->salary_range }}</td>
                             
                           </tr>
                         </tbody>

@@ -12,6 +12,8 @@ class JobsController extends Controller
         $this->middleware('auth:admin');
     }
 
+   
+
 
    
     public function create()
@@ -90,7 +92,7 @@ class JobsController extends Controller
             "description"=>'required',
             "requirement"=>'required',
             "location"=>'required',
-            "price"=>"required"   
+            "salary_range"=>"required"   
         ]);
         $job = new Job;
         $job->job_title = $request->input('job_title');
