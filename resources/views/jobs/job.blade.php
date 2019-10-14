@@ -18,7 +18,7 @@
                 <div class="panel-heading">Medical jobs  Upload</div>
 
                 <div class="panel-body">
-                <form class="form-horizontal" method="POST" action="{{url('/addjob')}}"
+                <form class="form-horizontal" method="POST" action="{{route('admin.addjob')}}"
                   >
                         {{ csrf_field() }}
 
@@ -91,16 +91,16 @@
                             </div>
                             </div>
 
-                            <div class="form-group{{ $errors->has('price') ? ' has-error' : '' }}">
-                            <label for="price" class="col-md-4 control-label">Price-Range</label>
+                            <div class="form-group{{ $errors->has('salary_range') ? ' has-error' : '' }}">
+                            <label for="salary_range" class="col-md-4 control-label">Salary Range</label>
 
                             <div class="col-md-6">
-                                <input id="price" type="text" class="form-control" name="price"
-                                 value="{{ old('price') }}" required autofocus placeholder='$200-$500'>
+                                <input id="salary_range" type="text" class="form-control" name="salary_range"
+                                 value="{{ old('salary_range') }}" required autofocus placeholder='$200-$500'>
 
-                                @if ($errors->has('price'))
+                                @if ($errors->has('salary_range'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('price') }}</strong>
+                                        <strong>{{ $errors->first('salary_range') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -113,7 +113,7 @@
                                 </button>
                             </div>
                         </div>
-
+                            
                             </form>
 
                        
