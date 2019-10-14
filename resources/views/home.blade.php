@@ -1,6 +1,13 @@
 
 @extends('layouts.job')
+<style type="text/css">
+ .avatar{
+     border-radius:100%;
+     max-width : 200px;
+ }
+ </style>
 @section('content')
+
 
 <div class="services">
 		<div class="container">
@@ -11,17 +18,20 @@
 					</div>
 				</div>
 			</div>
-				
-			<div class="row">
-				<div class="col-md-4">
-                    <img src="images/black5.jpg" width="300px" 
-                    class="avatar" alt="Add Your picture"> 
+			</div>
+		<div class="container">
+			<div class="panel panel-default text-center">
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-md-4">
+                    		<img src="images/black5.jpg" width="300px" 
+                   				 class="avatar" alt="Add Your picture"> 
 					<form id="logout-form" action="{{ route('logout') }}" method="POST" ">
                         {{ csrf_field() }}
 						<input type="file" name="profile">
                      </form>
-				</div>	 
-				<div class="col-md-8">
+						</div>	 
+					<div class="col-md-8">
 						<div class="top_bar_item" style="color:green;">{{ Auth::user()->name }} &nbsp &nbsp</div>
 						<a href="{{ route('logout') }}" style="color:red;"
                                             onclick="event.preventDefault();
@@ -32,20 +42,83 @@
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
+										<h1>Applied Jobs</h1>
+										<table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Job Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Requirment</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Price Range</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>NeuroSurgeon</td>
+                            <td>Brain doctor and many more</td>
+                            <td>6 years medical experience and many more</td>
+                            <td>London</td>
+                            <td>$2000- $25000</td>
+                            
+                          </tr>
+                        </tbody>
+                    </table>
+					<table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Job Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Requirment</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Price Range</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>NeuroSurgeon</td>
+                            <td>Brain doctor and many more</td>
+                            <td>6 years medical experience and many more</td>
+                            <td>London</td>
+                            <td>$2000- $25000</td>
+                            
+                          </tr>
+                        </tbody>
+                    </table>
+					<table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Job Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Requirment</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Price Range</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>NeuroSurgeon</td>
+                            <td>Brain doctor and many more</td>
+                            <td>6 years medical experience and many more</td>
+                            <td>London</td>
+                            <td>$2000- $25000</td>
+                            
+                          </tr>
+                        </tbody>
+                    </table>
+                	</div>
+					
+			</div>
+		</div>
 						
-                  
-                			</div>
-				</div>
-						
+	</div>
 				
 
 			</div>
-		</div>
+			</div>
+			
+	
 	</div>
-
-
-
-
 
 
 
