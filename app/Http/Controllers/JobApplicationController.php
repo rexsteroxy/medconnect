@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreJobApplication;
 use App\JobApplication as JobApplication;
 use Illuminate\Http\Request;
-
+use App\Job;
 class JobApplicationController extends Controller
 {
     /**
@@ -51,7 +51,7 @@ class JobApplicationController extends Controller
 
         $application['cv'] = $path;
         JobApplication::create($application);
-       return redirect()->route('jobListings');
+       return redirect()->route('jobListings')->with('response','Your Application has been recieved');
     
 
     }
@@ -62,9 +62,10 @@ class JobApplicationController extends Controller
      * @param  \App\JobApplication  $jobApplication
      * @return \Illuminate\Http\Response
      */
-    public function show(JobApplication $jobApplication)
+    public function show($job_id)
     {
-        return view('jobs.application');
+        $jobs =Job::where('id', '=', $job_id)->get();
+        return view('jobs.application',compact('jobs'));
     }
 
     /**

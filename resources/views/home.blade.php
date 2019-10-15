@@ -36,7 +36,7 @@
 						</div>	 
 					<div class="col-md-8">
 						<div class="top_bar_item" style="color:green;">{{ Auth::user()->name }} &nbsp &nbsp</div>
-						<a href="{{ route('logout') }}" style="color:red;"
+						<a class='btn btn-danger' href="{{ route('logout') }}" style="color:white;"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                             Logout

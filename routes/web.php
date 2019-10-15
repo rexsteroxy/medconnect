@@ -18,6 +18,11 @@ Route::get('/joblistings', 'PagesController@getJobListingPage')->name('jobListin
 Route::get('/contact', 'PagesController@getContactPage');
 Route::get('/admin', 'PagesController@getAdminDashBoard');
 
+//Route for the application page
+
+Route::get('/application/{id}','JobApplicationController@show');
+Route::post('/apply','JobApplicationController@store')->name('user.apply');
+
 
 Auth::routes();
 Route::get('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
@@ -41,8 +46,5 @@ Route::post('/editjob/{job_id}','JobsController@update');
 Route::get('/delete/{id}','JobsController@destroy');
 
 
-//Route for the application page
 
-Route::get('/application','JobApplicationController@show');
-Route::post('/apply','JobApplicationController@store')->name('user.apply');
 

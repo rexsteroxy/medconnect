@@ -2,13 +2,24 @@
 
 @section('content')
 
-	
+	 
 
 	<div class="services">
 		<div class="container">
 			<div class="row">
+			
 				<div class="col">
 					<div class="section_title service text-center trans_200"><h2>Available Medical Job Listings</h2></div>
+					@if(count($errors) > 0)
+                    @foreach($errors->all as $error)
+                        <div class="alert alert-danger"><li>{{$error}}</li></div>
+                    @endforeach
+                @endif
+                @if (session('response'))
+                        <div class="alert alert-success">
+                            {{ session('response') }}
+                        </div>
+                    @endif
 				</div>
 			</div>
 			<div class="row services_row">
@@ -16,7 +27,7 @@
 				@foreach($jobs->all() as $job)
 				<!-- Service -->
 				<div class="col-lg-4 col-md-6 service_col">
-					<a href="/application">
+					<a href="">
 						<div class="service text-center trans_200">
 							<div class="service_icon"><img class="svg" src="images/service_1.svg" alt=""></div>
 							<div class="service_title trans_200">{{ $job->job_title }}</div>
@@ -59,7 +70,7 @@
                     </table>
 							</div>
 							<cite style="float:left">Uploaded On: {{date('M j, Y h:i', strtotime($job->updated_at))}}</cite>
-							<div class="button about_button"><a href="/application">Apply</a></div>
+							<div class="button about_button"><a href="/application/{{$job->id}}">Apply</a></div>
 						</div>
 					</a>
 					
