@@ -14,7 +14,7 @@
 				
 				<!-- Slider Item -->
 				<div class="owl-item">
-					<div class="home_slider_background" style="background-image:url(images/black2.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(images/black4.png)"></div>
 					<div class="home_content">
 						<div class="container">
 							<div class="row">
