@@ -45,6 +45,7 @@ class JobApplicationController extends Controller
     {
         
         $application = $request->all();
+     
         $application['user_id'] = auth()->user()->id;
         // return $application;
         $path = $request->file('cv')->store('applications');
