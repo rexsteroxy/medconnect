@@ -27,6 +27,7 @@ Route::post('/apply','JobApplicationController@store')->name('user.apply');
 Auth::routes();
 Route::get('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 Route::get('/viewUsers','AdminController@showUsers');
+Route::get('/editUser', 'HomeController@editUser')->name('editUser');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

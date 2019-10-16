@@ -26,12 +26,12 @@
 						<div class="col-md-4">
                     		<img src="images/black5.jpg" width="300px" 
                    				 class="avatar" alt="Add Your picture"> 
-					<form id="logout-form" action="{{ route('logout') }}" method="POST" ">
+					<!-- <form id="logout-form" action="{{ route('logout') }}" method="POST" ">
                         {{ csrf_field() }}
 						<input type="file" name="profile">
-                     </form><br><br><hr>
+                     </form><br><br><hr> -->
 					 <ul>
- 						<li> <a class='btn btn-success' href="#">Edit Profile details</a> </li>
+ 						<li> <a class='btn btn-success' href="{{ route('editUser') }}">Edit Profile details</a> </li>
 					 </ul>
 						</div>	 
 					<div class="col-md-8">
