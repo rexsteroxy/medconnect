@@ -109,6 +109,15 @@
                             <a href='{{ url("/delete/{$job->id}") }}'>
                                 <span class="fa fa-trash">Delete</span>
                             </a>
+
+                            
+                        </li>
+                        <li role="presentation">
+                            <a href='{{ url("/applications/{$job->id}") }}'>
+                                <span class="fa fa-trash">See all Applications</span>
+                            </a>
+
+                           
                         </li>
                         
                     </ul>

@@ -22,7 +22,7 @@ class CreateJobApplicationsTable extends Migration
             $table->string('phone');
             $table->string('cv');
             $table->timestamps();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('job_id')->references('id')->on('jobs');
         });
     }
