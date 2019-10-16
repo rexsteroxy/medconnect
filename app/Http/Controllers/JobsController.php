@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\JobApplication;
 
 use Illuminate\Http\Request;
 use App\Job;
@@ -129,4 +130,17 @@ class JobsController extends Controller
         Job::where('id',$job_id)->delete();
     return redirect('/admin')->with('response','Job Post deleted  successfully');
     }
+
+
+    public function showApplications($job_id)
+    {
+        $job = Job::find($job_id);
+        $applications = $job->jobApplications;
+
+        return $applications->all();
+        //To access, use foreach($applications->all() as $application)
+    }
+
+
+   
 }

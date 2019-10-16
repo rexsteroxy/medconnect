@@ -35,6 +35,7 @@ Route::get('/home', 'HomeController@index')->name('home');
         Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
         Route::get('/', 'AdminController@index')->name('admin.dashboard');
         Route::get('/logout', 'Auth\AdminLoginController@logout')->name('admin.logout');
+       
     });
 
 //Routes for the job posting admin page
@@ -44,6 +45,7 @@ Route::get('/view/{job_id}','JobsController@show');
 Route::get('/edit/{job_id}','JobsController@edit');
 Route::post('/editjob/{job_id}','JobsController@update');
 Route::get('/delete/{id}','JobsController@destroy');
+Route::get('/applications/{job_id}','JobsController@showApplications');
 
 
 
