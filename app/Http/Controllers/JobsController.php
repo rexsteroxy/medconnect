@@ -137,8 +137,8 @@ class JobsController extends Controller
         $job = Job::find($job_id);
         $applications = $job->jobApplications;
 
-        return $applications->all();
-        //To access, use foreach($applications->all() as $application)
+        //return $applications->all();
+        return view('jobs.applied',compact('applications'));
     }
 
 

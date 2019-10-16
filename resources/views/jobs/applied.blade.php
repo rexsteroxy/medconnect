@@ -62,39 +62,44 @@
                
                 <div class="col-md-12">
                
-                @if(count($users) > 0)
 
-@foreach($users->all() as $user)
-<div class="row">
-<div ></div>
-<h1>{{$user->id}}</h1>
-    <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Registered Time</th>
-            
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{{ $user->name }}</td>
-            <td>{{ $user->email }}</td>
-            <td>{{date('M j, Y h:i', strtotime($user->updated_at))}}</td>
-            
-            
-          </tr>
-        </tbody>
-    </table>
-</div>
-    
+                @if(count($applications) > 0)
 
-@endforeach
-@else
-<h2>NO  User AVAILABLE</h2>
+                @foreach($applications->all() as $application)
+                <div class="row">
+                <div ></div>
+                <h1>{{$application->application_title}}</h1>
+                    <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Applicant Name</th>
+                            <th scope="col">Applicant Email</th>
+                            <th scope="col">Applicant Number</th>
+                            <th scope="col">Applicant CV</th>
+                            <th scope="col">Application Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>{{ $application->name }}</td>
+                            <td>{{ $application->email }}</td>
+                            <td>{{ $application->phone }}</td>
+                            <td> <a href="{{ $application->cv }}">Click To view</a></td>
+                            <td>{{ $application->created_at }}</td>
+                            
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    
+                
+                    <cite style="float:left"><td> <a href="{{ $application->cv }}">Click To Download CV</a></td></cite>
+                    <hr>
+                @endforeach
+                @else
+                <h2>NO application POST AVAILABLE</h2>
 
-@endif
+                @endif
                 
                     
                 </div>
@@ -103,26 +108,6 @@
     </div>
 </div>
 @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

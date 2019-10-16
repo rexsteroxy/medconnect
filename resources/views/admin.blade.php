@@ -54,13 +54,13 @@
                    <p class="lead"></p>
                 </div> -->
               
-                <div class="col-md-3">
+                <!-- <div class="col-md-3">
                     <img src="images/black5.jpg" 
                     class="avatar" alt=""> 
                   
-                </div>
+                </div> -->
                
-                <div class="col-md-9">
+                <div class="col-md-12">
                
 
                 @if(count($jobs) > 0)
