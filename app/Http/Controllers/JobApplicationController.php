@@ -48,9 +48,9 @@ class JobApplicationController extends Controller
      
         $application['user_id'] = auth()->user()->id;
         // return $application;
-        $path = $request->file('cv')->store('applications');
-
-        $application['cv'] = $path;
+        $request->file('cv')->store('public');
+        $fileName = $request->file('cv')->hashName();
+        $application['cv'] = $fileName;
         JobApplication::create($application);
        return redirect()->route('jobListings')->with('response','Your Application has been recieved');
     

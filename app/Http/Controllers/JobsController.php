@@ -51,7 +51,7 @@ class JobsController extends Controller
         $job->salary_range= $request->input('salary_range'); 
         $job->save();
 
-       return redirect('/admin')->with('response','Job uploaded  successfully');
+        return redirect('/admin')->with('response','Job uploaded  successfully');
 
     }
 
@@ -139,6 +139,13 @@ class JobsController extends Controller
 
         //return $applications->all();
         return view('jobs.applied',compact('applications'));
+    }
+
+    public function viewPDF($pdf_name){
+
+        $path = public_path().'/storage/'.$pdf_name;
+       
+        return response()->file($path);
     }
 
 

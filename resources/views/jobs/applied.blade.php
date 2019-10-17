@@ -84,7 +84,7 @@
                             <td>{{ $application->name }}</td>
                             <td>{{ $application->email }}</td>
                             <td>{{ $application->phone }}</td>
-                            <td> <a href="{{ $application->cv }}">Click To view</a></td>
+                            <td> <a href="/viewPDF/{{$application->cv}}" target="_blank">Click To view</a></td>
                             <td>{{ $application->created_at }}</td>
                             
                           </tr>
@@ -93,8 +93,7 @@
                 </div>
                     
                 
-                    <cite style="float:left"><td> <a href="{{ $application->cv }}">Click To Download CV</a></td></cite>
-                    <hr>
+                                        <hr>
                 @endforeach
                 @else
                 <h2>NO application POST AVAILABLE</h2>

@@ -11,7 +11,7 @@ $factory->define(App\JobApplication::class, function (Faker $faker) {
         'job_id' => $faker->randomElement($job_ids),
         'email' =>$faker->safeEmail,
         'phone' => $faker->phoneNumber,
-        'cv' =>'applications/webview-ac013af3-f15f-4420-a8a1-b72ed206d0cc.pdf'
+        'cv' =>'tj3FDghPCJSi2aG3wbWACdsP74hcD1SGHdKiFHl6.pdf'
     ];
 });
 
