@@ -34,7 +34,7 @@
 									<li><a href="/">Home</a></li>
 									<li><a href="/about">About us</a></li>
 									<li><a href="/joblistings">Job Listings</a></li>
-									<li><a href="/home">Dashboard</a></li>
+									<li><a href="/showUserJobs">Dashboard</a></li>
 									@guest
 									<li><a href="{{ route('register') }}">Register</a></li>
 									<li><a href="{{ route('login') }}">Login</a></li>
