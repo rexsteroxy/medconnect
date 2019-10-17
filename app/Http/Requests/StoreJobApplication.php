@@ -24,10 +24,7 @@ class StoreJobApplication extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:5',
-            'email' => 'required',
-            'phone' => 'required',
-            'cv' => 'required|max:5000|mimes:doc,pdf,docx,zip' //required,file,5mb,pdf or docs allowed
+            'cv' => 'required|max:5000|mimes:pdf' //required,file,5mb,pdf allowed
         ];
     }
 }
