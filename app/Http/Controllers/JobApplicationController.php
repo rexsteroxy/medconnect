@@ -6,6 +6,7 @@ use App\Http\Requests\StoreJobApplication;
 use App\JobApplication as JobApplication;
 use Illuminate\Http\Request;
 use App\Job;
+use App\User;
 class JobApplicationController extends Controller
 {
     /**
@@ -45,7 +46,10 @@ class JobApplicationController extends Controller
     {
         
         $application = $request->all();
-     
+        $job_id = $request->job_id;
+        $user_id = auth()->user()->id;
+        $job = Job::find($job_id);
+        $job->users()->attach($user_id);
         $application['user_id'] = auth()->user()->id;
         // return $application;
         $request->file('cv')->store('public');
@@ -101,5 +105,13 @@ class JobApplicationController extends Controller
     public function destroy(JobApplication $jobApplication)
     {
         //
+    }
+
+    public function showUserJobs()
+    {
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id);
+
+        return $user->jobs->all();
     }
 }
