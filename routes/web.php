@@ -23,7 +23,7 @@ Route::get('/admin', 'PagesController@getAdminDashBoard');
 
 Route::get('/application/{id}','JobApplicationController@show');
 Route::post('/apply','JobApplicationController@store')->name('user.apply');
-Route::get('showUserJobs','JobApplicationController@showUserJobs');
+
 
 Auth::routes();
 Route::get('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');

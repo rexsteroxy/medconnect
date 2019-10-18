@@ -107,11 +107,5 @@ class JobApplicationController extends Controller
         //
     }
 
-    public function showUserJobs()
-    {
-        $user_id = auth()->user()->id;
-        $user = User::find($user_id);
-
-        return $user->jobs->all();
-    }
+   
 }

@@ -46,57 +46,41 @@
                                             {{ csrf_field() }}
                                         </form>
 										<h1>Applied Jobs</h1>
-										<table class="table">
+									<hr><hr>
+					
+                    @if(count($applied_jobs) > 0)
+
+                @foreach($applied_jobs as $job)
+                <h3>{{$job->job_title}}</h3>
+                    <table class="table">
                         <thead class="thead-dark">
                           <tr>
                             <th scope="col">Job Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Requirment</th>
                             <th scope="col">Location</th>
                             <th scope="col">Price Range</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td>NeuroSurgeon</td>
-                            <td>London</td>
-                            <td>$2000- $25000</td>
+                            <td>{{ $job->job_title }}</td>
+                            <td>{{ $job->description }}</td>
+                            <td>{{ $job->requirement }}</td>
+                            <td>{{ $job->location }}</td>
+                            <td>{{ $job->salary_range }}</td>
                             
                           </tr>
                         </tbody>
                     </table>
-					<table class="table">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Job Title</th>
-                            <th scope="col">Location</th>
-                            <th scope="col">Price Range</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>NeuroSurgeon</td>
-                            <td>London</td>
-                            <td>$2000- $25000</td>
-                            
-                          </tr>
-                        </tbody>
-                    </table>
-					<table class="table">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Job Title</th>
-                            <th scope="col">Location</th>
-                            <th scope="col">Price Range</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>NeuroSurgeon</td>
-                            <td>London</td>
-                            <td>$2000- $25000</td>
-                            
-                          </tr>
-                        </tbody>
-                    </table>
+
+                    <cite style="float:left">Applied On: {{date('M j, Y h:i', strtotime($job->updated_at))}}</cite>
+                    <hr>
+                @endforeach
+                @else
+                <h4>You have not applied for any job</h4>
+
+                @endif
                 	</div>
 					
 			</div>
