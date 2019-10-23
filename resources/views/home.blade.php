@@ -14,7 +14,12 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title service text-center trans_200">
-						<h2>User Dashboard</h2>
+            <h2>User Dashboard</h2>
+            @if (session('response'))
+                        <div class="alert alert-success">
+                            {{ session('response') }}
+                        </div>
+            @endif
 					</div>
 				</div>
 			</div>
@@ -24,8 +29,14 @@
 				<div class="panel-body">
 					<div class="row">
 						<div class="col-md-4">
-                    		<img src="images/black5.jpg" width="300px" 
-                   				 class="avatar" alt="Add Your picture"> 
+
+            @if(Auth::user()->dp)
+                    <img src="storage/profile/{{Auth::user()->dp}}" width="300px" 
+                   				 class="avatar" alt="Add Your picture">
+            @else 
+                    <img src="images/emptyimage.jpeg" width="300px" 
+                   				 class="avatar" alt="Add Your picture">
+            @endif	  
 					<!-- <form id="logout-form" action="{{ route('logout') }}" method="POST" ">
                         {{ csrf_field() }}
 						<input type="file" name="profile">

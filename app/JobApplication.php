@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class JobApplication extends Model
 {
+    protected $with = ['user'];
     protected $fillable = [
-        'name', 'email', 'phone','cv','user_id','job_id'
+        'cv','user_id','job_id'
     ];
 
     public function user() {

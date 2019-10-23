@@ -33,6 +33,10 @@ class HomeController extends Controller
 
     public function editUser()
     {
-        return view('editUser');
+        $user_id = auth()->user()->id;
+        $user = User::find($user_id);
+        return view('editUser', compact('user'));
     }
+    
+
 }

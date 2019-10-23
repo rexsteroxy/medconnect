@@ -19,7 +19,7 @@
                         <div class="alert alert-success">
                             {{ session('response') }}
                         </div>
-                    @endif
+                 @endif
 				</div>
 			</div>
 			<div class="row services_row">

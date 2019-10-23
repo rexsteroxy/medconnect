@@ -44,19 +44,23 @@ class JobApplicationController extends Controller
      */
     public function store(StoreJobApplication $request)
     {
-        
+        if(auth()->user()->dp == null)//if user has not finished profile
+         return redirect()
+            ->route('editUser')
+            ->with('response','Please complete your profile before applying for jobs');
+       
+        //if user has finished profile push application
         $application = $request->all();
         $job_id = $request->job_id;
         $user_id = auth()->user()->id;
         $job = Job::find($job_id);
-        $job->users()->attach($user_id);
+        $job->users()->attach($user_id);//taking advantage of pivot tables
         $application['user_id'] = auth()->user()->id;
-        // return $application;
-        $request->file('cv')->store('public');
+        $request->file('cv')->store('public/application');
         $fileName = $request->file('cv')->hashName();
         $application['cv'] = $fileName;
         JobApplication::create($application);
-       return redirect()->route('jobListings')->with('response','Your Application has been recieved');
+        return redirect()->route('jobListings')->with('response','Your Application has been recieved');
     
 
     }

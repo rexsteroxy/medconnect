@@ -81,8 +81,8 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td>{{ $application->name }}</td>
-                            <td>{{ $application->email }}</td>
+                            <td>{{ $application->user->name }}</td>
+                            <td>{{ $application->user->email }}</td>
                             <td>{{ $application->phone }}</td>
                             <td> <a href="/viewPDF/{{$application->cv}}" target="_blank">Click To view</a></td>
                             <td>{{ $application->created_at }}</td>

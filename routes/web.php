@@ -29,6 +29,8 @@ Auth::routes();
 Route::get('/user/logout', 'Auth\LoginController@userLogout')->name('user.logout');
 Route::get('/viewUsers','AdminController@showUsers');
 Route::get('/editUser', 'HomeController@editUser')->name('editUser');
+Route::post('/updateUser', 'UserController@updateUser')->name('updateUser');
+
 
 
 Route::get('/home', 'HomeController@index')->name('home');
