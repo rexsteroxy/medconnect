@@ -143,7 +143,7 @@ class JobsController extends Controller
 
     public function viewPDF($pdf_name){
 
-        $path = public_path().'/storage/'.$pdf_name;
+        $path = public_path().'/storage/application/'.$pdf_name;
        
         return response()->file($path);
     }
